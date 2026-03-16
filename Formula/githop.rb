@@ -2,21 +2,21 @@ class Githop < Formula
   desc "A lightweight TUI for quick git branch operations"
   homepage "https://github.com/tonegawa07/githop"
   license "MIT"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tonegawa07/githop/releases/download/v#{version}/githop-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "c788fb05a712df7b57fcad8073a95cf451008b484cca5d9c84dbcd6412c16348"
+      sha256 "88b815f8151c7e3c04ac468be53498fb03b3a8458f46303a521f404fe56d09a5"
     else
       url "https://github.com/tonegawa07/githop/releases/download/v#{version}/githop-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "042fac56ac27dcb7ec2214acbfaa02efbe8a3f47c46f77158a8f5f7ac4acfab6"
+      sha256 "d5ff7ffd60afc9259e2e87384616850e1cf6a21b196dee1d8827623d532a9577"
     end
   end
 
   on_linux do
     url "https://github.com/tonegawa07/githop/releases/download/v#{version}/githop-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "fdaa280fde97aa1ca412efd0a68299b649cdc9e7a825543406462201f5a5d5bf"
+    sha256 "9b21f8245aa9c40ff301791c1f665e04417800e2d44c22733aa578e15c766d01"
   end
 
   def install
