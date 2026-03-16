@@ -7,13 +7,16 @@ class Ndir < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tonegawa07/ndir/releases/download/v#{version}/ndir-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 "PLACEHOLDER"
     else
       url "https://github.com/tonegawa07/ndir/releases/download/v#{version}/ndir-v#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 "PLACEHOLDER"
     end
   end
 
   on_linux do
     url "https://github.com/tonegawa07/ndir/releases/download/v#{version}/ndir-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "PLACEHOLDER"
   end
 
   def install
