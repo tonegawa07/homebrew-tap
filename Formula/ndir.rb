@@ -2,12 +2,12 @@ class Ndir < Formula
   desc "Inline arrow-key directory navigation for your shell"
   homepage "https://github.com/tonegawa07/ndir"
   license "MIT"
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tonegawa07/ndir/releases/download/v#{version}/ndir-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER"
+      sha256 "84804de7f465d63f65b8e6483869ff8efc95255e9bcc5dd28f77408f1c11b206"
     else
       url "https://github.com/tonegawa07/ndir/releases/download/v#{version}/ndir-v#{version}-x86_64-apple-darwin.tar.gz"
       sha256 "PLACEHOLDER"
