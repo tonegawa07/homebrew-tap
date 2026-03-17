@@ -2,21 +2,21 @@ class Ndir < Formula
   desc "Inline arrow-key directory navigation for your shell"
   homepage "https://github.com/tonegawa07/ndir"
   license "MIT"
-  version "0.4.3"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tonegawa07/ndir/releases/download/v#{version}/ndir-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7dc08f8651fd0bb064917bc036a73ebb6491ef3065c017a93aa8ba29471bb502"
+      sha256 "0b45650665a4bc52002662a4e82fdd2d56aaa878e8cd5f57abeb532575259cff"
     else
       url "https://github.com/tonegawa07/ndir/releases/download/v#{version}/ndir-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "239c7a7dc94fa55de5b6642e662cf3ed903c45f864149eb135a5f8b82e8a6ff3"
+      sha256 "fadf16b9c2d153815a398cbfc139bbf84bd36bb04247dc4a6406f9c3579e3f22"
     end
   end
 
   on_linux do
     url "https://github.com/tonegawa07/ndir/releases/download/v#{version}/ndir-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "bd0c3e51ff32eb9a79e7cb18098cc3e29b5ce959b03514177e15f6f29653138e"
+    sha256 "fd876dcb37f1d30390210346ca87e4c9a216f0c26c907ce24d5c2afecf85de70"
   end
 
   def install
@@ -24,6 +24,6 @@ class Ndir < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/ndir --version", 1)
+    assert_match version.to_s, shell_output("#{bin}/ndir --version")
   end
 end
